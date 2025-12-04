@@ -1,0 +1,190 @@
+{
+  "page": {
+    "components": [
+      {
+        "type": "banner",
+        "image": "https://images.unsplash.com/photo-1573496799515-eebbb63814f2?auto=format&fit=crop&w=1200&q=80",
+        "height": 150,
+        "padding": 0
+      },
+
+      {
+        "type": "text",
+        "value": "Welcome to AppDrop",
+        "size": 24,
+        "weight": "bold",
+        "align": "center",
+        "padding": 16
+      },
+
+      {
+        "type": "text",
+        "value": "Discover curated visuals, media, and interactive content designed for you.",
+        "size": 14,
+        "weight": "normal",
+        "align": "center",
+        "padding": 12
+      },
+
+      {
+        "type": "carousel",
+        "images": [
+          "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1200&q=80",
+          "https://images.unsplash.com/photo-1486365227551-f3f90034a57c?auto=format&fit=crop&w=1200&q=80",
+          "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+          "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "height": 220,
+        "autoPlay": true,
+        "padding": 12
+      },
+
+      {
+        "type": "text",
+        "value": "Popular Collections",
+        "size": 20,
+        "weight": "bold",
+        "align": "left",
+        "padding": 16
+      },
+
+      {
+        "type": "grid",
+        "images": [
+          "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80"
+        ],
+        "columns": 3,
+        "spacing": 8,
+        "padding": 16
+      },
+
+      {
+        "type": "text",
+        "value": "Featured Video",
+        "size": 20,
+        "weight": "bold",
+        "align": "left",
+        "padding": 16
+      },
+
+      {
+        "type": "video",
+        "url": "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
+        "autoPlay": false,
+        "loop": false,
+        "height": 230,
+        "padding": 12
+      },
+
+      {
+        "type": "text",
+        "value": "Trending Visual Stories",
+        "size": 20,
+        "weight": "bold",
+        "align": "left",
+        "padding": 16
+      },
+
+      {
+        "type": "carousel",
+        "images": [
+          "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=1200&q=80",
+          "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1200&q=80",
+          "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "height": 210,
+        "autoPlay": true,
+        "padding": 12
+      },
+
+      {
+        "type": "text",
+        "value": "More Inspiration Awaits",
+        "size": 18,
+        "weight": "bold",
+        "align": "center",
+        "padding": 16
+      },
+
+      {
+        "type": "grid",
+        "images": [
+          "https://images.unsplash.com/photo-1462826303086-329426d1aef5?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?auto=format&fit=crop&w=600&q=80",
+          "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80"
+        ],
+        "columns": 2,
+        "spacing": 12,
+        "padding": 20
+      },
+
+      {
+        "type": "text",
+        "value": "Thanks for exploring AppDrop!",
+        "size": 16,
+        "weight": "normal",
+        "align": "center",
+        "padding": 16
+      },
+      {
+        "type": "text",
+        "value": "About AppDrop",
+        "size": 18,
+        "weight": "bold",
+        "align": "left",
+        "padding": 20
+      },
+
+      {
+        "type": "text",
+        "value": "AppDrop is a modern content platform built to deliver curated visuals, media, and creative insights. Our mission is to bring inspiration from the world of design, technology, and innovation directly to your fingertips.",
+        "size": 14,
+        "weight": "normal",
+        "align": "left",
+        "padding": 16
+      },
+
+      {
+        "type": "text",
+        "value": "📍 Address:\nAppDrop Technologies Pvt. Ltd.\n123 Innovation Street, Bangalore, India - 560001",
+        "size": 14,
+        "weight": "normal",
+        "align": "left",
+        "padding": 16
+      },
+
+      {
+        "type": "text",
+        "value": "📞 Contact: +91 98765 43210\n📧 Email: support@appdrop.com",
+        "size": 14,
+        "weight": "normal",
+        "align": "left",
+        "padding": 16
+      },
+
+      {
+        "type": "text",
+        "value": "🌐 Follow Us:\nInstagram | Twitter | LinkedIn | YouTube",
+        "size": 14,
+        "weight": "normal",
+        "align": "center",
+        "padding": 20
+      },
+
+      {
+        "type": "text",
+        "value": "© 2025 AppDrop. All rights reserved.",
+        "size": 12,
+        "weight": "normal",
+        "align": "center",
+        "padding": 20
+      }
+    ]
+  }
+}
