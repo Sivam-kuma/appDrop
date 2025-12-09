@@ -1,4 +1,6 @@
+import 'package:appdrop/provider/cart_provider.dart';
 import 'package:appdrop/provider/page_provider.dart';
+import 'package:appdrop/widgets/cart_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'helpers/widget_factory.dart';
@@ -30,6 +32,7 @@ class HomePage extends StatelessWidget {
             )),
           ],
         ),
+
       ),
       backgroundColor: Colors.black,
       body: p.isLoading
@@ -46,6 +49,27 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
+      floatingActionButton: Consumer<CartProvider>(
+        builder: (context, cart, child) {
+          if (cart.totalItems == 0) return SizedBox();
+
+          return FloatingActionButton.extended(
+            backgroundColor: Colors.black,
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (_) => CartPage(),
+              ));
+            },
+            label: Row(
+              children: [
+                Icon(Icons.shopping_cart, color: Colors.white),
+                SizedBox(width: 8),
+                Text("${cart.totalItems}"),
+              ],
+            ),
+          );
+        },
+      ),
     );
   }
 }

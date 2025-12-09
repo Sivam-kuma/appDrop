@@ -1,3 +1,4 @@
+import 'package:appdrop/provider/cart_provider.dart';
 import 'package:appdrop/provider/page_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -7,9 +8,13 @@ import 'home_page.dart';
 void main() {
 
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => PageProvider() ..loadPage(),
-        child:const MyApp()),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => PageProvider() ..loadPage()),
+        ChangeNotifierProvider(create: (_) => CartProvider()),
+      ],
+      child: MyApp(),
+    ),
     );
 }
 

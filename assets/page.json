@@ -18,6 +18,42 @@
         "align": "center",
         "padding": 16
       },
+      {
+        "type": "products",
+        "value": "Buy our products",
+        "products": [
+          {
+            "name": "Headphones",
+            "image": "https://images.unsplash.com/photo-1462826303086-329426d1aef5?auto=format&fit=crop&w=600&q=80",
+            "price": 100,
+            "description": "High-quality wireless Bluetooth headphones with noise cancellation and deep bass.",
+            "rate": 3.5
+          },
+          {
+            "name": "Smart Watch",
+            "image": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?auto=format&fit=crop&w=600&q=80",
+            "price": 300,
+            "description": "A stylish fitness smartwatch with heart rate tracking, step count, and sleep monitoring.",
+            "rate": 4.5
+          },
+          {
+            "name": "Portable Speaker",
+            "image":  "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+            "price": 250,
+            "description": "Compact yet powerful Bluetooth speaker with long battery life and crisp sound.",
+            "rate": 4.5
+          },
+          {
+            "name": "Digital Camera",
+            "image": "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=80",
+            "price": 450,
+            "description": "Professional DSLR camera ideal for photography enthusiasts and content creators.",
+            "rate": 4.5
+          }
+        ]
+      },
+
+
 
       {
         "type": "text",
