@@ -57,7 +57,7 @@ class Product extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
 
-                    // ⭐ FIX: Use Expanded for image (no overflow)
+
                     Expanded(
                       flex: 4,
                       child: ClipRRect(
@@ -82,7 +82,7 @@ class Product extends StatelessWidget {
 
                     SizedBox(height: 8),
 
-                    // Name
+
                     Text(
                       e.name,
                       style: TextStyle(
@@ -93,8 +93,6 @@ class Product extends StatelessWidget {
                     ),
 
                     SizedBox(height: 5),
-
-                    // Description
                     Text(
                       e.description,
                       maxLines: 2,
@@ -128,7 +126,7 @@ class Product extends StatelessWidget {
 
                     SizedBox(height: 8),
 
-                    // Add to Cart button
+
                     GestureDetector(
                       onTap: () {
                         final cart = Provider.of<CartProvider>(context, listen: false);
@@ -154,7 +152,6 @@ class Product extends StatelessWidget {
                         ),
                       ),
                     )
-
                   ],
                 ),
               );

@@ -78,7 +78,6 @@ class CartPage extends StatelessWidget {
     );
   }
 
-  /// FIX: pageProvider is now passed as parameter
   About? findProduct(String name, PageProvider p) {
     for (var comp in p.components) {
       if (comp is Products) {
