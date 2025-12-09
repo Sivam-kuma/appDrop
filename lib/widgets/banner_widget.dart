@@ -8,9 +8,9 @@ class BannerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 10,
+      elevation: model.elevation,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(model.radius),
       ),
       margin: EdgeInsets.all(model.padding),
       color: Colors.black.withValues(alpha: 0.15),

@@ -23,7 +23,6 @@ class WidgetFactory {
     } else if (comp is TextModel) {
       return TextWidget(model: comp);
     }
-
     return SizedBox();
   }
 }

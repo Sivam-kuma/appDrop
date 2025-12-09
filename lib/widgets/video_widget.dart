@@ -28,7 +28,7 @@ class _VideoWidgetState extends State<VideoWidget> {
 
         controller.setLooping(widget.model.loop);
 
-        // Update UI every second for time text
+
         controller.addListener(() {
           if (mounted) setState(() {});
         });
@@ -61,7 +61,7 @@ class _VideoWidgetState extends State<VideoWidget> {
                     child: VideoPlayer(controller),
                   ),
 
-                  // Play / Pause Button
+
                   GestureDetector(
                     onTap: () {
                       controller.value.isPlaying
