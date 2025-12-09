@@ -59,7 +59,7 @@ class Product extends StatelessWidget {
 
 
                     Expanded(
-                      flex: 4,
+                      flex: 1,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(10),
                         child: Image.network(
@@ -87,23 +87,23 @@ class Product extends StatelessWidget {
                       e.name,
                       style: TextStyle(
                         color: Colors.black87,
-                        fontSize: 15,
+                        fontSize: 13,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
 
-                    SizedBox(height: 5),
+                    SizedBox(height: 3),
                     Text(
                       e.description,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                         color: Colors.black54,
-                        fontSize: 12,
+                        fontSize: 10,
                       ),
                     ),
 
-                    SizedBox(height: 8),
+                    SizedBox(height: 5),
 
                     Row(
                       children: [
@@ -112,19 +112,19 @@ class Product extends StatelessWidget {
                           style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
-                            fontSize: 14,
+                            fontSize: 13,
                           ),
                         ),
                         Spacer(),
-                        Icon(Icons.star, color: Colors.amber, size: 16),
+                        Icon(Icons.star, color: Colors.amber, size: 14),
                         Text(
                           "${e.rate}",
-                          style: TextStyle(fontSize: 13),
+                          style: TextStyle(fontSize: 12),
                         ),
                       ],
                     ),
 
-                    SizedBox(height: 8),
+                    SizedBox(height: 5),
 
 
                     GestureDetector(
@@ -139,7 +139,7 @@ class Product extends StatelessWidget {
                       },
                       child: Container(
                         width: double.infinity,
-                        padding: EdgeInsets.symmetric(vertical: 8),
+                        padding: EdgeInsets.symmetric(vertical: 5),
                         decoration: BoxDecoration(
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(8),

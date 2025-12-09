@@ -8,7 +8,7 @@ class CartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cart = Provider.of<CartProvider>(context);
-    final pageProvider = Provider.of<PageProvider>(context); // ✔ FIXED
+    final pageProvider = Provider.of<PageProvider>(context);
 
     return Scaffold(
       appBar: AppBar(
@@ -32,42 +32,58 @@ class CartPage extends StatelessWidget {
               backgroundImage: NetworkImage(product.image),
             ),
 
-            title: Text(product.name),
+            title: Text(
+              product.name,
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+            ),
 
             subtitle: Text("₹ ${product.price} × $qty"),
 
-            trailing: Row(
-              mainAxisSize: MainAxisSize.min,
+            // ---------------------------
+            // UPDATED TRAILING UI (COLUMN)
+            // ---------------------------
+            trailing: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                IconButton(
-                  icon: Icon(Icons.remove_circle_outline),
-                  onPressed: () {
-                    cart.decrease(product.name);
-                  },
-                ),
-
-                Text(
-                  qty.toString(),
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-
-                IconButton(
-                  icon: Icon(Icons.add_circle_outline),
-                  onPressed: () {
-                    cart.increase(product.name);
-                  },
-                ),
-
-                SizedBox(width: 10),
-
+                // Total Cost
                 Text(
                   "₹ ${product.price * qty}",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
+                  ),
+                ),
+
+                SizedBox(height: 10),
+
+                // Quantity Buttons ( - qty + )
+                Expanded(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      IconButton(
+                        icon: Icon(Icons.remove_circle_outline),
+                        onPressed: () {
+                          cart.decrease(product.name);
+                        },
+                      ),
+
+                      Text(
+                        qty.toString(),
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+
+                      IconButton(
+                        icon: Icon(Icons.add_circle_outline),
+                        onPressed: () {
+                          cart.increase(product.name);
+                        },
+                      ),
+                    ],
                   ),
                 ),
               ],
